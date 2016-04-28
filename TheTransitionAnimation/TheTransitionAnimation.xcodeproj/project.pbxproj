@@ -14,6 +14,7 @@
 		7481BCC81CD0F215004D2746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7481BCC61CD0F215004D2746 /* LaunchScreen.storyboard */; };
 		7481BCD31CD0F215004D2746 /* TheTransitionAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481BCD21CD0F215004D2746 /* TheTransitionAnimationTests.swift */; };
 		7481BCDE1CD0F215004D2746 /* TheTransitionAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481BCDD1CD0F215004D2746 /* TheTransitionAnimationUITests.swift */; };
+		748888931CD19D8600E0C3DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748888921CD19D8600E0C3DE /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7481BCD91CD0F215004D2746 /* TheTransitionAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheTransitionAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7481BCDD1CD0F215004D2746 /* TheTransitionAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTransitionAnimationUITests.swift; sourceTree = "<group>"; };
 		7481BCDF1CD0F215004D2746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748888921CD19D8600E0C3DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7481BCBC1CD0F215004D2746 /* TheTransitionAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				7488888E1CD19D5000E0C3DE /* Classes */,
 				7481BCBD1CD0F215004D2746 /* AppDelegate.swift */,
 				7481BCBF1CD0F215004D2746 /* ViewController.swift */,
 				7481BCC11CD0F215004D2746 /* Main.storyboard */,
@@ -123,6 +126,38 @@
 				7481BCDF1CD0F215004D2746 /* Info.plist */,
 			);
 			path = TheTransitionAnimationUITests;
+			sourceTree = "<group>";
+		};
+		7488888E1CD19D5000E0C3DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				748888901CD19D5000E0C3DE /* PhotoBrowser */,
+				7488888F1CD19D5000E0C3DE /* Home */,
+				748888911CD19D5000E0C3DE /* Tool */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7488888F1CD19D5000E0C3DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				748888921CD19D8600E0C3DE /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		748888901CD19D5000E0C3DE /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		748888911CD19D5000E0C3DE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +293,7 @@
 			files = (
 				7481BCC01CD0F215004D2746 /* ViewController.swift in Sources */,
 				7481BCBE1CD0F215004D2746 /* AppDelegate.swift in Sources */,
+				748888931CD19D8600E0C3DE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = TheTransitionAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.2323.TheTransitionAnimation;
@@ -410,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = TheTransitionAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.2323.TheTransitionAnimation;
@@ -484,6 +522,7 @@
 				7481BCE41CD0F215004D2746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7481BCE51CD0F215004D2746 /* Build configuration list for PBXNativeTarget "TheTransitionAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +531,7 @@
 				7481BCE71CD0F215004D2746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7481BCE81CD0F215004D2746 /* Build configuration list for PBXNativeTarget "TheTransitionAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +540,7 @@
 				7481BCEA1CD0F215004D2746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
